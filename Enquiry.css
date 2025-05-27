@@ -122,3 +122,17 @@
     border-radius: 10px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .enquiry-hero h1 {
+        font-size: 2rem;
+    }
+
+    .enquiry-form {
+        padding: 2rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
