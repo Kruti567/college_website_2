@@ -85,3 +85,57 @@
     font-size: 0.9rem;
   }
 }
+/* ========== HEADER RESPONSIVE STYLING ========== */
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+/* Small Devices (Phones, 480px and up) */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-nav a {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+}
