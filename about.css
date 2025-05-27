@@ -1,0 +1,285 @@
+/* About Page Specific Styles */
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+    color: white;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Journey & Leadership Section */
+.journey-leadership {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.journey-leadership h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c5aa0;
+}
+
+.journey-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.journey-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.college-stats {
+    text-align: center;
+}
+
+.stat-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-item h3 {
+    color: #2c5aa0;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Commitment Section */
+.commitment {
+    padding: 80px 0;
+}
+
+.commitment h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c5aa0;
+}
+
+.commitment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.commitment-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.commitment-card:hover {
+    transform: translateY(-5px);
+}
+
+.commitment-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.mission-vision h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c5aa0;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+
+.mission-card,
+.vision-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-card h3,
+.vision-card h3 {
+    color: #2c5aa0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission-card p,
+.vision-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.mission-card ul,
+.vision-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-card li,
+.vision-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: #666;
+}
+
+.mission-card li:before,
+.vision-card li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2c5aa0;
+    font-weight: bold;
+}
+
+/* Faculty Section */
+.faculty {
+    padding: 80px 0;
+}
+
+.faculty h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.facilities h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+.facilities-intro {
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.facilities-intro h3 {
+    color: #2c5aa0;
+    font-size: 1.5rem;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.facility-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+}
+
+.facility-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.facility-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Campus Visit Section */
+.campus-visit {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.campus-visit h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.campus-visit p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Active Navigation Link */
+.nav-menu a.active {
+    color: #2c5aa0;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .journey-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .commitment-grid,
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+}

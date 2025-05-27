@@ -1,0 +1,306 @@
+/* Programs Page Specific Styles */
+
+/* Programs Hero Section */
+.programs-hero {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+
+.programs-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.programs-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Undergraduate Programs Section */
+.undergraduate-programs {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.undergraduate-programs h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.program-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.program-card.featured {
+    border: 3px solid #2c5aa0;
+    transform: scale(1.02);
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card.featured:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.program-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.program-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.key-subjects h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.key-subjects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-subjects li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.2rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.key-subjects li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2c5aa0;
+}
+
+/* Curriculum Section */
+.curriculum {
+    padding: 80px 0;
+}
+
+.curriculum h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.semester-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #2c5aa0;
+}
+
+.semester-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.semester-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.semester-card li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.semester-card li:last-child {
+    border-bottom: none;
+}
+
+/* Specialization Section */
+.specialization {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.specialization h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.track-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.track-card:hover {
+    transform: translateY(-5px);
+}
+
+.track-card h3 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Career Prospects Section */
+.career-prospects {
+    padding: 80px 0;
+}
+
+.career-prospects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c5aa0;
+}
+
+.career-section {
+    margin-bottom: 4rem;
+}
+
+.career-section h3 {
+    color: #2c5aa0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.job-roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.job-role {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.role-number {
+    background: #2c5aa0;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.job-role h4 {
+    color: #2c5aa0;
+    margin-bottom: 0.5rem;
+}
+
+.job-role p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.industry-sectors h3 {
+    color: #2c5aa0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.sector-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.sector-card:hover {
+    transform: translateY(-5px);
+}
+
+.sector-card h4 {
+    color: #2c5aa0;
+    margin-bottom: 1rem;
+}
+
+.sector-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .programs-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .programs-grid,
+    .semester-grid,
+    .tracks-grid,
+    .job-roles-grid,
+    .sectors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .job-role {
+        flex-direction: column;
+        text-align: center;
+    }
+}
