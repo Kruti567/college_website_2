@@ -2,7 +2,7 @@
 
 /* About Hero Section */
 .about-hero {
-    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 150px 0 100px;
     text-align: center;
@@ -35,7 +35,7 @@
 
 .journey-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     align-items: center;
 }
@@ -56,6 +56,11 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
 }
 
 .stat-item h3 {
@@ -121,7 +126,7 @@
 
 .mission-vision-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
 }
 
@@ -131,6 +136,12 @@
     padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-5px);
 }
 
 .mission-card h3,
@@ -156,14 +167,13 @@
 
 .mission-card li,
 .vision-card li {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.5rem 1.5rem;
     position: relative;
-    padding-left: 1.5rem;
     color: #666;
 }
 
-.mission-card li:before,
-.vision-card li:before {
+.mission-card li::before,
+.vision-card li::before {
     content: '•';
     position: absolute;
     left: 0;
@@ -236,7 +246,7 @@
     line-height: 1.6;
 }
 
-/* Campus Visit Section */
+/* Campus Visit CTA */
 .campus-visit {
     padding: 80px 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -257,29 +267,23 @@
     margin-right: auto;
 }
 
-/* Active Navigation Link */
-.nav-menu a.active {
-    color: #2c5aa0;
-    font-weight: 600;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-    .journey-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .mission-vision-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .about-hero h1 {
         font-size: 2rem;
     }
-    
-    .commitment-grid,
-    .facilities-grid {
+
+    .journey-content,
+    .mission-vision-grid,
+    .facilities-grid,
+    .commitment-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-card,
+    .vision-card {
+        padding: 1.5rem;
     }
 }
