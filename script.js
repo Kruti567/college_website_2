@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Initialize header scroll effect after header is loaded
             initializeHeaderScrollEffect();
+
+            // ✅ Initialize mobile menu toggle
+            initializeMobileMenu();
         })
         .catch(error => console.error('Error loading header:', error));
     
@@ -57,6 +60,18 @@ function initializeHeaderScrollEffect() {
             }
         }
     });
+}
+
+// ✅ Mobile menu toggle
+function initializeMobileMenu() {
+    const menuIcon = document.getElementById('mobile-menu-icon');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (menuIcon && mobileNav) {
+        menuIcon.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    }
 }
 
 // Smooth scrolling for navigation links
