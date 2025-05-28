@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Nirmiti Degree College | B.Sc Data Science</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
@@ -178,23 +179,7 @@
     <!-- Include Footer -->
     <div id="footer-placeholder"></div>
 
-    <script src="script.js"></script>
-    <script>
-        // Load header and footer
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-                // Set active nav item
-                const contactLink = document.querySelector('a[href="contact.html"]');
-                if (contactLink) contactLink.classList.add('active');
-            });
-
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            });
-    </script>
+   
+    <script src="script.js"></script> 
 </body>
 </html>

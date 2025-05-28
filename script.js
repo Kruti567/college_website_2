@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Initialize header scroll effect after header is loaded
             initializeHeaderScrollEffect();
-
-            // ✅ Initialize mobile menu toggle
-            initializeMobileMenu();
         })
         .catch(error => console.error('Error loading header:', error));
     
@@ -28,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => console.error('Error loading footer:', error));
     }
 });
+
 
 // Set active navigation based on current page
 function setActiveNavigation() {
@@ -60,18 +58,6 @@ function initializeHeaderScrollEffect() {
             }
         }
     });
-}
-
-// ✅ Mobile menu toggle
-function initializeMobileMenu() {
-    const menuIcon = document.getElementById('mobile-menu-icon');
-    const mobileNav = document.getElementById('mobile-nav');
-
-    if (menuIcon && mobileNav) {
-        menuIcon.addEventListener('click', () => {
-            mobileNav.classList.toggle('active');
-        });
-    }
 }
 
 // Smooth scrolling for navigation links
@@ -141,3 +127,45 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+  // Load header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      const headerPlaceholder = document.getElementById('header-placeholder');
+      headerPlaceholder.innerHTML = data;
+
+      // Set active navigation state after header is loaded
+      setActiveNavigation();
+
+      // Initialize header scroll effect after header is loaded
+      initializeHeaderScrollEffect();
+    })
+    .catch(error => console.error('Error loading header:', error));
+
+  // Load footer if footer placeholder exists
+  const footerPlaceholder = document.getElementById('footer-placeholder');
+  if (footerPlaceholder) {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        footerPlaceholder.innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  }
+});
+
+// Use event delegation for menu toggle so it works on all pages, even after dynamic header loading
+document.addEventListener('click', (event) => {
+  if (event.target.closest('.menu-icon')) {
+    const headerPlaceholder = document.getElementById('header-placeholder');
+    const menuIcon = headerPlaceholder.querySelector('.menu-icon');
+    const navMenu = headerPlaceholder.querySelector('.nav-menu');
+
+    if (menuIcon && navMenu) {
+      menuIcon.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    }
+  }
+});
+
