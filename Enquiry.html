@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry - Nirmiti Degree College | B.Sc Data Science</title>
-    <link rel="stylesheet" href="styles.css">  
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="Enquiry.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry - Nirmiti Degree College | B.Sc Data Science</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="Enquiry.css" />
 </head>
 <body>
-    <div id="header-placeholder"></div>
+  <div id="header-placeholder"></div>
 
-    <!-- Hero Section -->
-    <section class="enquiry-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Enquiry Form</h1>
-                <p>Have questions about admissions, courses, or facilities? We're here to help.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="enquiry-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Enquiry Form</h1>
+        <p>Have questions about admissions, courses, or facilities? We're here to help.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Enquiry Form Section -->
-    <section class="enquiry-form-section">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p class="section-subtitle">Fill out the form below and our team will get back to you shortly.</p>
-            
-            <form class="enquiry-form" action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+  <div class="form-container">
+    <h1>B.Sc. in Data Science – Enquiry Form</h1>
+    <p>For 12th Pass Students from Any Stream</p>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+    <form id="enquiryForm" method="POST" action="https://formsubmit.co/Nirmitidegreecollege@gmail.com">
+      <label>1. Full Name:</label>
+      <input type="text" name="fullName" required />
 
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
+      <label>2. Date of Birth (DD/MM/YYYY):</label>
+      <input type="date" name="dob" required />
 
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject">
-                </div>
+      <label>3. Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
 
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
+      <label>4. Contact Number (WhatsApp preferred):</label>
+      <input type="tel" name="contact" required />
 
-                <div class="form-group">
-                    <button type="submit" class="submit-btn">Submit Enquiry</button>
-                </div>
-            </form>
-        </div>
-    </section>
+      <label>5. Email Address:</label>
+      <input type="email" name="email" required />
 
-    <!-- Location Map Section -->
-    <section class="location-map">
-     <div class="container">
-     <h2>Our Location</h2>
-     <div class="map-container" style="overflow:hidden; position:relative; height:400px; border-radius:8px;">
-      <iframe
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.777053305405!2d72.86791587498308!3d19.292059181957505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1db25a00841%3A0xc9772b61c095fa00!2sRP%20GEMS%20Group%20of%20Colleges!5e0!3m2!1sen!2sin!4v1748344987572!5m2!1sen!2sin" 
-       width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" 
-       referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
-     </div>
-   </section>
+      <label>6. City / Location:</label>
+      <input type="text" name="location" required />
 
+      <label>7. 12th Standard Stream:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="stream" value="Science" required /> Science</label>
+        <label><input type="radio" name="stream" value="Commerce" /> Commerce</label>
+        <label><input type="radio" name="stream" value="Arts" /> Arts</label>
+        <label><input type="radio" name="stream" value="Vocational / MCVC" /> Vocational / MCVC</label>
+        <label><input type="radio" name="stream" value="Other" /> Other</label>
+      </div>
 
-    <!-- Include Footer -->
-    <div id="footer-placeholder"></div>
+      <label>8. Year of Passing 12th:</label>
+      <input type="number" name="passingYear" required />
 
-    <script src="script.js"></script>
+      <label>9. Total Marks / Percentage in 12th:</label>
+      <input type="text" name="percentage" required />
 
+      <label>10. Are you interested in pursuing the course?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="interest" value="Yes" required /> Yes, I want to take admission</label>
+        <label><input type="radio" name="interest" value="Exploring" /> I’m exploring options</label>
+        <label><input type="radio" name="interest" value="Guidance" /> I need career guidance</label>
+      </div>
+
+      <label>11. Do you have basic knowledge of computers?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="computerKnowledge" value="Yes" required /> Yes</label>
+        <label><input type="radio" name="computerKnowledge" value="No" /> No</label>
+        <label><input type="radio" name="computerKnowledge" value="Somewhat" /> Somewhat</label>
+      </div>
+
+      <label>12. Preferred Mode of Study:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="studyMode" value="Offline" required /> Offline (On Campus)</label>
+      </div>
+
+      <label>13. Preferred Batch Timing:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="batch" value="Morning" required /> Morning</label>
+        <label><input type="radio" name="batch" value="Afternoon" /> Afternoon</label>
+        <label><input type="radio" name="batch" value="Evening" /> Evening</label>
+      </div>
+
+      <label>14. How did you hear about us?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="source" value="School" required /> School / Teacher</label>
+        <label><input type="radio" name="source" value="Social Media" /> Social Media</label>
+        <label><input type="radio" name="source" value="Google" /> Google Search</label>
+        <label><input type="radio" name="source" value="Friend" /> Referred by a friend</label>
+        <label><input type="radio" name="source" value="Seminar" /> College Seminar</label>
+        <label><input type="radio" name="source" value="Other" /> Other</label>
+      </div>
+
+      <label>15. Do you want a career counselor to contact you?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="counselor" value="Yes" required /> Yes</label>
+        <label><input type="radio" name="counselor" value="No" /> No</label>
+      </div>
+
+      <label>16. Do you have laptop or Desktop?</label>
+      <input type="text" name="laptopDesktop" required />
+
+      <label>17. Any Questions or Comments?</label>
+      <textarea name="comments" rows="4"></textarea>
+
+      <button type="submit">🔘 Submit</button>
+    </form>
+  </div>
+
+  <!-- Location Map Section -->
+  <section class="location-map">
+    <div class="container">
+      <h2>Our Location</h2>
+      <div class="map-container" style="overflow:hidden; position:relative; height:400px; border-radius:8px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.777053305405!2d72.86791587498308!3d19.292059181957505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1db25a00841%3A0xc9772b61c095fa00!2sRP%20GEMS%20Group%20of%20Colleges!5e0!3m2!1sen!2sin!4v1748344987572!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="script.js"></script>
 </body>
 </html>

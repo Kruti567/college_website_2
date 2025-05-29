@@ -22,86 +22,105 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Enquiry Form Section */
-.enquiry-form-section {
-    padding: 80px 0;
-    background: #f8f9fa;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
 
-.enquiry-form-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c5aa0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.contact-form-section {
+  padding: 80px 0;
 }
 
-.section-subtitle {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #666;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.contact-form-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c5aa0;
 }
 
-.enquiry-form {
-    max-width: 700px;
-    margin: 0 auto;
-    background: white;
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.contact-form-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 3rem;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.form-group label {
-    margin-bottom: 0.5rem;
-    color: #2c5aa0;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.form-group input,
-.form-group textarea {
-    padding: 0.75rem;
-    border: 2px solid #e9ecef;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+label {
+  margin-bottom: 0.5rem;
+  color: #2c5aa0;
+  font-weight: 600;
+  display: block;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #2c5aa0;
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
-.submit-btn {
-    background: #6c5ce7;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    align-self: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2c5aa0;
 }
 
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
+.radio-group label {
+  font-weight: normal;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background: #6c5ce7;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  align-self: center;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
+}
+
 
 /* Location Map Section */
 .location-map {
